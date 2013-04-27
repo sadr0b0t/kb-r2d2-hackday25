@@ -3,7 +3,7 @@ kb-r2d2-hackday25
 
 Результат работы команды КБ-r2d2 на HackDay#25 в Нижнем Новгороде.
 
-http://hackday.ru/events/hackday-25/projects
+http://hackday.ru/events/hackday-25/projects#project-412
 
 "rCARry" (Radio Controlled CAR-Drone)
 Автор идеи: Федор Чихалин

@@ -43,6 +43,7 @@ Carry Through! Доводить до Конца!
 
 Фотки
 http://fotki.yandex.ru/users/ii1i7/album/334838/
+http://vk.com/album-51012381_173038533
 
 Видео
 rcarry04-с этого все и начиналось:                    https://vimeo.com/64938466
@@ -61,3 +62,5 @@ rcarry10-те самые люди:                               https://vimeo.c
 http://1i7.livejournal.com/12618.html
 http://panchul.livejournal.com/258005.html
 http://panchul.livejournal.com/259711.html
+http://habrahabr.ru/company/intel/blog/176985/
+http://vk.com/hackday25

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context=".MainActivity" >
+
+	<ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/background2" />
+
+	<Button
+	    android:id="@+id/buttonForward"
+    	android:background="@drawable/button_up"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginLeft="285dp"
+	    android:layout_marginBottom="150dp"
+	    android:text=""/>
+
+	<Button
+	    android:id="@+id/buttonBack"
+    	android:background="@drawable/button_down"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginLeft="285dp"
+	    android:layout_marginBottom="5dp"
+	    android:text="" />
+
+	<Button
+	    android:id="@+id/buttonLeft"
+    	android:background="@drawable/button_left"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="70dp"
+	    android:layout_marginLeft="215dp"
+	    android:text="" />
+
+	<Button
+	    android:id="@+id/buttonRight"
+    	android:background="@drawable/button_right"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginBottom="70dp"
+	    android:layout_marginRight="195dp"
+	    android:text="" />
+
+</RelativeLayout>

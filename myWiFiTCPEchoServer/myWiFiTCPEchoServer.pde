@@ -8,7 +8,7 @@ const int LEFT_MOTOR_B_PIN = 6;
 const int RIGHT_MOTOR_B_PIN = 5;
 const int RIGHT_MOTOR_F_PIN = 3;
 
-IPv4 ipServer = {192,168,0,190};
+IPv4 ipServer = {192,168,43,190};
 unsigned short portServer = DNETcK::iPersonalPorts44 + 300;
 
 const char * szSsid = "konf-zal";
@@ -33,7 +33,7 @@ typedef enum
 STATE state = INITIALIZE;
 
 unsigned tStart = 0;
-unsigned tWait = 5000;
+unsigned tWait = 20000;
 
 TcpServer tcpServer;
 TcpClient tcpClient;
@@ -92,6 +92,17 @@ void moveRight() {
   runRightMotorB();  
 }
 
+void printIP(void)
+{
+  Serial.print("IP Address assigned: ");
+  Serial.print((int)ipServer.rgbIP[0]);
+  Serial.print(".");
+  Serial.print((int)ipServer.rgbIP[1]);
+  Serial.print(".");
+  Serial.print((int)ipServer.rgbIP[2]);
+  Serial.print(".");
+  Serial.println((int)ipServer.rgbIP[3]);
+}
 
 void setup() {
 
@@ -118,6 +129,7 @@ void setup() {
     {
         Serial.print("Connection Created, ConID = ");
         Serial.println(conID, DEC);
+        printIP();
         state = INITIALIZE;
     }
     else
@@ -229,6 +241,7 @@ void loop() {
 
         else if( (((unsigned) millis()) - tStart) > tWait )
         {
+          Serial.print("Close connection on timeout");
             state = CLOSE;
         }
         break;
